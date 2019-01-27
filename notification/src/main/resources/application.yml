@@ -1,0 +1,13 @@
+mail:
+  auth:
+    login: nbatov722@gmail.com
+    password: 1qaz-2wsx
+  realisation:
+    vanilla: true
+    spring: false
+  pop3:
+    host: pop.gmail.com
+    port: 995
+  smtp:
+    host: smtp.gmail.com
+    port: 465
