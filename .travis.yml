@@ -1,4 +1,6 @@
 language: java
 jdk:
   -openjdk11
-script: bundle exec thor build
+script:
+  - gradle assemble
+  - bundle exec thor build
