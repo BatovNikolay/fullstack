@@ -3,3 +3,14 @@ jdk:
   -openjdk11
 before_install:
   - chmod +x gradlew
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+notifications:
+  email:
+    recipients:
+      - batovna@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
+env:
+  global:
+    - CODECOV_TOKEN="542670ce-5cec-4599-861b-4157b0e48e6e"
