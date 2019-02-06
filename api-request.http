@@ -10,9 +10,9 @@ Content-Type: application/json
 
 {
   "to" : "nbatov722@gmail.com",
-  "from" : "TestFrom",
-  "subject" : "TestSubject",
-  "body" : "TestBody"
+  "from" : "TestFromSpring",
+  "subject" : "TestSubjectSpring",
+  "body" : "TestBodySpring"
 }
 
 ###

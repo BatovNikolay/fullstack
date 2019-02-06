@@ -1,0 +1,23 @@
+[
+  {
+    "to": null,
+    "from": "=?UTF-8?B?0JrQvtC80LDQvdC00LAgR29vZ2xl?= <googlecommunityteam-noreply@google.com>",
+    "subject": "Николай, поздравляем с созданием аккаунта Google!\n ",
+    "body": "javax.mail.internet.MimeMultipart@53986142",
+    "error": null
+  },
+  {
+    "to": null,
+    "from": "Google <no-reply@accounts.google.com>",
+    "subject": "Советы по безопасности от Google: помогите нам защитить Вас!",
+    "body": "javax.mail.internet.MimeMultipart@6855a326",
+    "error": null
+  },
+  {
+    "to": null,
+    "from": "nbatov722@gmail.com",
+    "subject": "TestSubjectSpring",
+    "body": "TestBodySpring\r\n",
+    "error": null
+  }
+]

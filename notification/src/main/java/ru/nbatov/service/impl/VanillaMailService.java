@@ -2,6 +2,7 @@ package ru.nbatov.service.impl;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,6 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -41,6 +41,7 @@ public class VanillaMailService implements IMailService {
     @Getter
     private static final Properties propPop3 = new Properties();
 
+    @Autowired
     public VanillaMailService(Environment environment) {
         this.environment = environment;
     }
@@ -95,12 +96,6 @@ public class VanillaMailService implements IMailService {
     @Override
     public List<Notification> getMails() {
         this.initProperties();
-        log.debug("{} - Get property in env mail.pop3 [host={}, port={}]",
-                SERVICE_NAME,
-                LocalDateTime.now(),
-                propPop3.getProperty("mail.pop3.host"),
-                propPop3.getProperty("mail.pop3.port"),
-                propPop3.getProperty("mail.pop3.starttls.enable"));
         Session emailSession = Session.getDefaultInstance(propPop3);
         List<Notification> result = new ArrayList<>();
         Folder inbox = null;

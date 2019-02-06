@@ -3,11 +3,25 @@ mail:
     login: nbatov722@gmail.com
     password: 1qaz-2wsx
   realisation:
-    vanilla: true
-    spring: false
+    vanilla: false
+    spring: true
   pop3:
     host: pop.gmail.com
     port: 995
   smtp:
     host: smtp.gmail.com
     port: 465
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nbatov722@gmail.com
+    password: 1qaz-2wsx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    pop3:
+      host: pop.gmail.com
