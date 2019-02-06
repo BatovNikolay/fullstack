@@ -9,10 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder(toBuilder = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class Notification {
-    private String to;
-    private String from;
-    private String subject;
-    private String body;
-    private Error error;
+public class Error {
+    private ErrorMessage errorMessage;
+    private String message;
 }

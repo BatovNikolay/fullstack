@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.nbatov.model.Notification;
 import ru.nbatov.service.IMailService;
 
-import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -22,12 +21,12 @@ public class EMailController {
         this.mailService = mailService;
     }
 
-    @GetMapping("inbox")
+    @GetMapping("/inbox")
     public ResponseEntity<List<Notification>> getMails() {
         return ResponseEntity.ok(mailService.getMails());
     }
 
-    @PostMapping("send")
+    @PostMapping("/send")
     public ResponseEntity<Boolean> sendMail(@RequestBody Notification notification) {
         return ResponseEntity.ok(mailService.sendMail(notification));
     }
