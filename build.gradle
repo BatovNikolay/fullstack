@@ -20,6 +20,8 @@ allprojects {
         testCompile group: 'junit', name: 'junit', version: junitVersion
         testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: hamcrest
         testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: powerMock
+        testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: powerMock
+        testCompile group: 'org.powermock', name: 'powermock-module-junit4-common', version: powerMock
         compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
         annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     }
